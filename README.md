@@ -1,5 +1,5 @@
 # MLflow_Tracking
-Artefacts to deploy and use MLfLow Tracking Server  
+Artifacts to deploy and use MLfLow Tracking Server  
 
 
 > Build a docker image
