@@ -1,7 +1,9 @@
 FROM continuumio/miniconda3
 
+LABEL maintainer sucitw@gmail.com
+
 # Environment virables
-ENV MLFLOW_HOME /opt/mlflow
+ENV MLFLOW_HOME /tmp/mlflow
 ENV MLFLOW_VERSION 1.10.0
 ENV SERVER_PORT 5000
 ENV SERVER_HOST 0.0.0.0
@@ -17,7 +19,7 @@ RUN apt-get update && \
 # install mflow
 RUN pip install mlflow==${MLFLOW_VERSION} && \
 # Working environment setup
-# create related folder
+# create related folders
     mkdir -p ${MLFLOW_HOME}/scripts && \
     mkdir -p ${FILE_STORE} && \
     mkdir -p ${ARTIFACT_STORE} 
