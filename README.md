@@ -12,5 +12,5 @@ docker build --no-cache -t suci/mlflow-tracking .
 ```
 docker run -d -p 5000:5000 \
     -v /tmp/mlflow/artifactStore:/tmp/mlflow/artifactStore \
-    --name mlflow-tracking-server suci/mlflow-tracking```
+    --name mlflow-tracking-server suci/mlflow-tracking
 ```
