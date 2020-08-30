@@ -1,5 +1,5 @@
-# mlflow_tracking
-Artefacts to deploy and use MLFLow Tracking Server  
+# MLflow_Tracking
+Artefacts to deploy and use MLfLow Tracking Server  
 
 
 > Build a docker image
@@ -8,7 +8,7 @@ Working dir = root folder of this code repo
 docker build --no-cache -t suci/mlflow-tracking .
 ```
 
-> Launch MLFlow Tracking server in Docker
+> Launch MLflow Tracking server in Docker
 ```
 docker run -d -p 5000:5000 \
     -v /tmp/mlflow/artifactStore:/tmp/mlflow/artifactStore \
