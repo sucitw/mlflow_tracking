@@ -1,4 +1,4 @@
-import os, time
+import os
 import mlflow
 from random import random, randint
 from mlflow import log_metric, log_param, log_artifacts
@@ -19,10 +19,10 @@ if __name__ == "__main__":
         log_param("param1", randint(0, 100))
 
         # Log a metric; metrics can be updated throughout the run
-        log_metric("metricA", random())
-        log_metric("metricA", random() + 1)
-        log_metric("metricA", random() + 2)
-        log_metric("metricB", random() + 2)
+        log_metric("metricsA", random())
+        log_metric("metricsA", random() + 1)
+        log_metric("metricsA", random() + 2)
+        log_metric("metricsB", random() + 2)
 
         # Log an artifact (output file)
         if not os.path.exists("outputs"):
@@ -31,5 +31,3 @@ if __name__ == "__main__":
             f.write("hello world! Run id:{}".format(type(mlflow.active_run().info)))
         log_artifacts("outputs")
         print("Save to: {}".format(mlflow.get_artifact_uri()))
-
-

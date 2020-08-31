@@ -21,7 +21,7 @@ docker run -d -p 5000:5000 \
 
 Directly run demo code after checking environment variables 
 
-- pycontw2020_demo.py
+- pytw2020_demo.py
 
 ## Check results
 
