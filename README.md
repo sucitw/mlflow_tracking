@@ -1,6 +1,7 @@
 # MLflow_Tracking
-Artifacts to deploy and use MLfLow Tracking Server  
 
+Artifacts to deploy and use MLfLow Tracking Server  
+The docker file and demo codes have been tested in Mac OS successfully. For Win env, some configurations may be changed.
 
 ## Build a docker image
 
