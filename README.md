@@ -20,11 +20,12 @@ docker run -d -p 5000:5000 \
 
 ## Run sample code
 
-Install requirement libraries
+Install requirement libraries accordingly
 
 Run demo code after checking environment variables
 
 - pytw2020_demo.py
+- pytw2020_demo_SK_model.py
 - pytw2020_demo_autologging.py
 
 ## Check results
