@@ -5,7 +5,7 @@ from mlflow import log_metric, log_param, log_artifacts
 
 if __name__ == "__main__":
     # Setup & Initialize MLflow experiment
-    experiment_name = "tracking api demo"
+    experiment_name = "Tracking api demo"
     tracking_server = "http://localhost:5000"
 
     mlflow.set_tracking_uri(tracking_server)
@@ -28,6 +28,6 @@ if __name__ == "__main__":
         if not os.path.exists("outputs"):
             os.makedirs("outputs")
         with open("outputs/test.txt", "w") as f:
-            f.write("hello world! Run id:{}".format(type(mlflow.active_run().info)))
+            f.write("hello world! Run info:{}".format(mlflow.active_run().info))
         log_artifacts("outputs")
         print("Save to: {}".format(mlflow.get_artifact_uri()))
